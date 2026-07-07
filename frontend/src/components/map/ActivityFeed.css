@@ -1,0 +1,35 @@
+.activity-feed{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:20px 60px 100px;
+
+}
+
+.activity-feed h2{
+
+font-size:34px;
+
+margin-bottom:30px;
+
+color:white;
+
+}
+
+.activity-feed div{
+
+padding:24px;
+
+margin-bottom:20px;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:#cfd3e8;
+
+}

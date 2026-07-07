@@ -1,0 +1,178 @@
+/* ==========================================================
+   CATVERSE X - LOGIN LAYOUT
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+
+    width:100%;
+    min-height:100%;
+    font-family:Inter,sans-serif;
+    background:#080911;
+    color:#fff;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================================
+PAGE
+========================================================== */
+
+.login-page{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top left,#4b1670 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#52163f 0%,transparent 40%),
+    #080911;
+
+}
+
+/* ==========================================================
+MAIN CONTAINER
+========================================================== */
+
+.login-container{
+
+    position:relative;
+
+    width:min(1700px,100%);
+
+    min-height:900px;
+    align-items:start;
+
+    display:grid;
+
+    grid-template-columns:60% 40%;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(30px);
+
+    box-shadow:
+
+    0 25px 80px rgba(0,0,0,.45);
+
+}
+
+/* ==========================================================
+LEFT PANEL
+========================================================== */
+
+.left-panel{
+
+    position:relative;
+
+    padding:55px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+}
+
+/* ==========================================================
+RIGHT PANEL
+========================================================== */
+
+.right-panel{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:45px;
+
+    background:
+
+    linear-gradient(
+    180deg,
+    rgba(255,255,255,.02),
+    rgba(255,255,255,.01));
+
+}
+
+/* ==========================================================
+RESPONSIVE
+========================================================== */
+
+@media(max-width:1200px){
+
+.login-container{
+
+grid-template-columns:1fr;
+
+}
+
+.right-panel{
+
+padding:35px;
+
+}
+
+.left-panel{
+
+padding:35px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.login-page{
+
+padding:15px;
+
+}
+
+.left-panel{
+
+padding:25px;
+
+}
+
+.right-panel{
+
+padding:25px;
+
+}
+
+}

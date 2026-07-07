@@ -1,0 +1,199 @@
+.background{
+
+position:fixed;
+
+inset:0;
+
+overflow:hidden;
+
+z-index:-999;
+
+background:#060311;
+
+}
+
+/* ========================================= */
+
+.bg-base{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#090513 0%,
+
+#060311 100%
+
+);
+
+}
+
+/* ========================================= */
+
+.bg-glow{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(140px);
+
+animation:floatGlow 12s ease-in-out infinite;
+
+opacity:.9;
+
+}
+
+/* Purple */
+
+.bg-purple{
+
+width:700px;
+
+height:700px;
+
+left:-180px;
+
+top:-180px;
+
+background:#7b2cff55;
+
+}
+
+/* Pink */
+
+.bg-pink{
+
+width:800px;
+
+height:800px;
+
+right:-250px;
+
+top:120px;
+
+background:#ff33cc33;
+
+animation-delay:2s;
+
+}
+
+/* Blue */
+
+.bg-blue{
+
+width:600px;
+
+height:600px;
+
+left:35%;
+
+bottom:-220px;
+
+background:#4dc8ff22;
+
+animation-delay:4s;
+
+}
+
+/* ========================================= */
+
+.bg-grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(
+
+rgba(255,255,255,.03) 1px,
+
+transparent 1px
+
+),
+
+linear-gradient(
+
+90deg,
+
+rgba(255,255,255,.03) 1px,
+
+transparent 1px
+
+);
+
+background-size:55px 55px;
+
+}
+
+/* ========================================= */
+
+.bg-noise{
+
+position:absolute;
+
+inset:0;
+
+opacity:.04;
+
+background-image:
+
+radial-gradient(
+
+circle,
+
+white 1px,
+
+transparent 1px
+
+);
+
+background-size:20px 20px;
+
+}
+
+/* ========================================= */
+
+.bg-vignette{
+
+position:absolute;
+
+inset:0;
+
+box-shadow:
+
+inset 0 0 200px black;
+
+}
+
+/* ========================================= */
+
+@keyframes floatGlow{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-35px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}

@@ -1,0 +1,239 @@
+.navbar{
+
+    position:fixed;
+
+    top:24px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:95%;
+
+    z-index:999;
+
+}
+
+.navbar-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 30px;
+
+    border-radius:24px;
+
+    background:rgba(14,12,28,.88);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,0,180,.18);
+
+    box-shadow:0 0 35px rgba(255,0,170,.12);
+
+}
+
+.logo-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    text-decoration:none;
+
+}
+
+.logo-circle{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#ff4fd8,#8b5cf6);
+
+    font-size:26px;
+
+    box-shadow:0 0 18px rgba(255,0,180,.45);
+
+}
+
+.logo-title{
+
+    color:white;
+
+    font-size:28px;
+
+    margin:0;
+
+}
+
+.logo-title span{
+
+    color:#ff4fd8;
+
+}
+
+.logo-subtitle{
+
+    margin-top:2px;
+
+    color:#ff69d4;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:34px;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    position:relative;
+
+}
+
+.nav-links a:hover{
+
+    color:#ff4fd8;
+
+}
+
+.active-link{
+
+    color:#ff4fd8 !important;
+
+}
+
+.active-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-10px;
+
+    left:0;
+
+    width:100%;
+
+    height:3px;
+
+    border-radius:30px;
+
+    background:#ff4fd8;
+
+}
+
+.login-button{
+
+    padding:12px 22px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(90deg,#ff4fd8,#8b5cf6);
+
+    font-weight:700;
+
+}
+
+.guardian-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.guardian-info{
+
+    text-align:right;
+
+}
+
+.guardian-text{
+
+    font-size:11px;
+
+    color:#a970ff;
+
+    letter-spacing:2px;
+
+}
+
+.guardian-info h4{
+
+    margin:2px 0;
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+.guardian-info small{
+
+    color:#d39bff;
+
+}
+
+.logout-button{
+
+    padding:12px 20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-weight:700;
+
+    background:linear-gradient(90deg,#ff4d7a,#ff4fd8);
+
+    transition:.3s;
+
+}
+
+.logout-button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 18px rgba(255,0,120,.45);
+
+}

@@ -1,0 +1,52 @@
+.hero{
+
+    width:100%;
+    max-width:1700px;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:45% 55%;
+
+    align-items:center;
+
+    min-height:calc(100vh - 110px);
+
+    padding:120px 60px 80px;
+
+    gap:50px;
+
+}
+
+.hero-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    z-index:5;
+
+}
+
+.hero-right{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:650px;
+
+    height:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:visible;
+
+}

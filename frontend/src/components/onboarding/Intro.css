@@ -1,0 +1,22 @@
+/* ===========================================
+   CATVERSE X - Intro Controller
+   This file intentionally contains only the
+   root container styles.
+   Individual scenes have their own CSS.
+=========================================== */
+
+.intro {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    background: #050816;
+
+}

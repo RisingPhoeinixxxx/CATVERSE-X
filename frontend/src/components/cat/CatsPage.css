@@ -1,0 +1,67 @@
+.cats-page{
+
+max-width:1600px;
+
+margin:auto;
+
+padding:150px 60px 80px;
+
+}
+
+.cats-header{
+
+margin-bottom:50px;
+
+}
+
+.cats-tag{
+
+display:inline-block;
+
+padding:10px 20px;
+
+border-radius:40px;
+
+background:#ffffff10;
+
+border:1px solid rgba(255,79,216,.25);
+
+color:#ff4fd8;
+
+letter-spacing:2px;
+
+font-size:13px;
+
+margin-bottom:20px;
+
+}
+
+.cats-header h1{
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1;
+
+margin:20px 0;
+
+}
+
+.cats-header h1 span{
+
+color:#ff4fd8;
+
+}
+
+.cats-header p{
+
+max-width:700px;
+
+font-size:18px;
+
+line-height:32px;
+
+color:#9ea6c2;
+
+}

@@ -1,0 +1,155 @@
+.scene2{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,#1a1045 0%,#050816 70%);
+}
+
+.scene2-background{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle,
+    rgba(130,80,255,.15),
+    transparent 70%);
+
+    animation:pulse 5s infinite;
+}
+
+.scene2-container{
+
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:40px;
+}
+
+.luna-glow{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:320px;
+    height:320px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(165,116,255,.25),
+    transparent 70%);
+
+    animation:float 4s ease-in-out infinite;
+}
+
+.luna-image{
+
+    width:260px;
+
+    filter:
+    drop-shadow(0 0 25px #8f6bff)
+    drop-shadow(0 0 50px #8f6bff);
+}
+
+.dialogue-box{
+
+    width:min(700px,90vw);
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.dialogue-line{
+
+    color:white;
+
+    font-family:var(--font-space);
+
+    font-size:clamp(20px,2vw,30px);
+
+    opacity:0;
+
+    animation:fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.3;
+
+    }
+
+    50%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        opacity:.3;
+
+    }
+
+}

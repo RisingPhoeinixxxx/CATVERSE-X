@@ -1,0 +1,130 @@
+.loading-screen{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#050816;
+
+    overflow:hidden;
+}
+
+.loading-card{
+
+    width:min(760px,90vw);
+
+    padding:50px;
+
+    border-radius:24px;
+
+    background:rgba(12,18,38,.88);
+
+    border:1px solid rgba(125,92,255,.25);
+
+    backdrop-filter:blur(25px);
+
+    box-shadow:
+    0 0 50px rgba(125,92,255,.2);
+}
+
+.loading-card h1{
+
+    color:white;
+
+    font-size:48px;
+
+    text-align:center;
+
+    margin-bottom:8px;
+}
+
+.loading-subtitle{
+
+    color:#9e8fff;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    letter-spacing:2px;
+}
+
+.loading-progress{
+
+    width:100%;
+
+    height:14px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#1a2142;
+}
+
+.loading-bar{
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        #6c63ff,
+        #9d7dff
+    );
+
+    transition:width .2s;
+}
+
+.loading-percent{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+.loading-log{
+
+    margin-top:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.loading-line{
+
+    color:#b7bff9;
+
+    animation:fadeIn .6s forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

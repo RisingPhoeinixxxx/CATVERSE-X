@@ -1,0 +1,49 @@
+.vision-section{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:20px 60px;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:30px;
+
+}
+
+.vision-card{
+
+padding:40px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+}
+
+.vision-card h2{
+
+margin-bottom:20px;
+
+font-size:34px;
+
+color:#ff4fd8;
+
+}
+
+.vision-card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#c5c9dd;
+
+}

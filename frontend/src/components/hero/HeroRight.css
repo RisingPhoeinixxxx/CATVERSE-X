@@ -1,0 +1,359 @@
+.hero-right{
+
+    position:relative;
+
+    width:100%;
+
+    height:700px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:visible;
+
+}
+
+/* =============================== */
+/* CAT */
+/* =============================== */
+
+.cyber-cat{
+
+    position:absolute;
+
+    width:650px;
+
+    height:auto;
+
+    top:80px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:20;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    animation: floatCat 9s ease-in-out infinite;
+
+    filter:
+    drop-shadow(0 0 20px rgba(255,70,220,.45))
+    drop-shadow(0 0 60px rgba(170,70,255,.50));
+
+}
+
+/* =============================== */
+/* GLOW */
+/* =============================== */
+
+.cat-glow{
+
+    position:absolute;
+
+    width:470px;
+
+    height:470px;
+
+    top:130px;
+
+    left:56%;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,70,220,.45) 0%,
+    rgba(170,70,255,.18) 45%,
+    transparent 72%);
+
+    filter:blur(100px);
+
+    animation:pulseGlow 5s ease-in-out infinite;
+
+    z-index:1;
+
+}
+
+/* =============================== */
+/* RINGS */
+/* =============================== */
+
+.ring{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    left:56%;
+
+    transform:translateX(-50%);
+
+    pointer-events:none;
+
+}
+
+.ring1{
+
+    width:540px;
+
+    height:540px;
+
+    top:70px;
+
+    border:2px solid rgba(255,70,220,.28);
+
+    animation:rotateClockwise 32s linear infinite;
+
+    z-index:5;
+
+}
+
+.ring2{
+
+    width:490px;
+
+    height:490px;
+
+    top:110px;
+
+    border:2px dashed rgba(170,90,255,.35);
+
+    animation:rotateCounter 24s linear infinite;
+
+    z-index:6;
+
+}
+
+.ring3{
+
+    width:630px;
+
+    height:630px;
+
+    top:30px;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    animation:rotateClockwise 45s linear infinite;
+
+    z-index:4;
+
+}
+
+/* =============================== */
+/* SCAN */
+/* =============================== */
+
+.scan-line{
+
+    position:absolute;
+
+    width:700px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    height:3px;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    #ff4fd8,
+    transparent);
+
+    box-shadow:0 0 18px #ff4fd8;
+
+    animation:scanMove 5s linear infinite;
+
+    z-index:30;
+
+}
+
+/* =============================== */
+/* HUD */
+/* =============================== */
+
+.hud{
+
+    position:absolute;
+
+    z-index:40;
+
+    transition: .3s;
+
+}
+
+/* Top Left */
+
+.hud1{
+
+    top:40px;
+
+    left:20px;
+
+}
+
+/* Top Right */
+
+.hud2{
+
+    top:40px;
+
+    right:20px;
+
+}
+
+/* Bottom Left */
+
+.hud3{
+
+    bottom:90px;
+
+    left:20px;
+
+}
+
+/* Bottom Right */
+
+.hud4{
+
+    bottom:90px;
+
+    right:20px;
+
+}
+
+.hud:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 35px rgba(255,70,220,.35);
+}
+
+/* =============================== */
+/* FLOAT */
+/* =============================== */
+
+@keyframes floatCat{
+
+0%{
+
+transform:translateX(-50%) translateY(0);
+
+}
+
+50%{
+
+transform:translateX(-50%) translateY(-16px);
+
+}
+
+100%{
+
+transform:translateX(-50%) translateY(0);
+
+}
+
+}
+
+@keyframes rotateClockwise{
+
+from{
+
+transform:translateX(-50%) rotate(0deg);
+
+}
+
+to{
+
+transform:translateX(-50%) rotate(360deg);
+
+}
+
+}
+
+@keyframes rotateCounter{
+
+from{
+
+transform:translateX(-50%) rotate(360deg);
+
+}
+
+to{
+
+transform:translateX(-50%) rotate(0deg);
+
+}
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+
+transform:translateX(-50%) scale(.95);
+
+opacity:.7;
+
+}
+
+50%{
+
+transform:translateX(-50%) scale(1.08);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateX(-50%) scale(.95);
+
+opacity:.7;
+
+}
+
+}
+
+@keyframes scanMove{
+
+0%{
+
+top:12%;
+
+opacity:0;
+
+}
+
+10%{
+
+opacity:1;
+
+}
+
+90%{
+
+opacity:1;
+
+}
+
+100%{
+
+top:88%;
+
+opacity:0;
+
+}
+
+}

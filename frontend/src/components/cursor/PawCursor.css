@@ -1,0 +1,55 @@
+body{
+    cursor:default;
+}
+
+.paw-cursor{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    transform:translate(-50%,-50%);
+
+    pointer-events:none;
+
+    z-index:999999;
+
+    font-size:34px;
+
+    user-select:none;
+
+    transition:
+    left .04s linear,
+    top .04s linear;
+
+    filter:
+
+    drop-shadow(0 0 8px #ff3ecb)
+    drop-shadow(0 0 18px #b347ff)
+    drop-shadow(0 0 32px #ff5cff);
+
+    animation:glowPulse 1.5s infinite;
+}
+
+@keyframes glowPulse{
+
+0%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.18);
+
+}
+
+100%{
+
+transform:translate(-50%,-50%) scale(1);
+
+}
+
+}

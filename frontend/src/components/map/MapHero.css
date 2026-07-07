@@ -1,0 +1,95 @@
+.map-hero{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:140px 60px 60px;
+
+}
+
+.map-badge{
+
+display:inline-block;
+
+padding:12px 24px;
+
+border-radius:40px;
+
+background:#ff4fd815;
+
+border:1px solid #ff4fd830;
+
+color:#ff4fd8;
+
+letter-spacing:2px;
+
+margin-bottom:30px;
+
+}
+
+.map-hero h1{
+
+font-size:88px;
+
+font-weight:800;
+
+color:white;
+
+}
+
+.map-hero h1 span{
+
+color:#ff4fd8;
+
+}
+
+.map-hero p{
+
+margin-top:25px;
+
+max-width:700px;
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#bfc4da;
+
+}
+
+.map-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+gap:20px;
+
+}
+
+.map-buttons button{
+
+padding:18px 38px;
+
+border:none;
+
+border-radius:18px;
+
+background:linear-gradient(90deg,#ff4fd8,#8f4dff);
+
+color:white;
+
+cursor:pointer;
+
+font-size:17px;
+
+}
+
+.secondary{
+
+background:transparent !important;
+
+border:1px solid #ff4fd8 !important;
+
+}

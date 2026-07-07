@@ -1,0 +1,135 @@
+.mission-card{
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+transition:.35s;
+
+}
+
+.mission-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ff4fd8;
+
+box-shadow:
+
+0 0 30px rgba(255,79,216,.2);
+
+}
+
+.mission-top{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.mission-top h2{
+
+font-size:24px;
+
+color:white;
+
+}
+
+.mission-top span{
+
+padding:8px 16px;
+
+border-radius:30px;
+
+background:#ff4fd820;
+
+color:#ff4fd8;
+
+font-size:13px;
+
+}
+
+.mission-card h3{
+
+font-size:28px;
+
+color:white;
+
+}
+
+.mission-card p{
+
+color:#b9bfd6;
+
+}
+
+.mission-info{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:10px 0;
+
+}
+
+.mission-info strong{
+
+color:white;
+
+}
+
+.mission-info p{
+
+margin-top:6px;
+
+}
+
+.volunteer{
+
+font-size:16px;
+
+}
+
+.mission-card button{
+
+margin-top:15px;
+
+padding:15px;
+
+border:none;
+
+border-radius:16px;
+
+background:linear-gradient(90deg,#ff4fd8,#8f4dff);
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.mission-card button:hover{
+
+transform:scale(1.03);
+
+}

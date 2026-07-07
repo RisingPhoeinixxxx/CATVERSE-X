@@ -1,0 +1,169 @@
+.guardian-choice{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,
+    #241356,
+    #050816 70%);
+}
+
+.guardian-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:
+    radial-gradient(circle,
+    rgba(146,94,255,.18),
+    transparent 70%);
+
+    animation:pulse 4s infinite;
+}
+
+.guardian-card{
+
+    position:relative;
+    z-index:2;
+
+    width:min(720px,90vw);
+
+    padding:60px;
+
+    border-radius:24px;
+
+    background:rgba(10,15,35,.75);
+
+    border:1px solid rgba(145,94,255,.35);
+
+    backdrop-filter:blur(20px);
+
+    text-align:center;
+
+    box-shadow:
+    0 0 60px rgba(130,80,255,.25);
+}
+
+.guardian-small{
+
+    color:#9d87ff;
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+}
+
+.guardian-card h1{
+
+    color:white;
+
+    font-size:52px;
+
+    margin-bottom:20px;
+}
+
+.guardian-card span{
+
+    color:#8d63ff;
+}
+
+.guardian-description{
+
+    color:#c8c8e8;
+
+    line-height:1.8;
+
+    margin-bottom:45px;
+
+    font-size:18px;
+}
+
+.guardian-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+}
+
+.register-btn,
+.login-btn{
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:18px 34px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+}
+
+.register-btn{
+
+    background:#8d63ff;
+
+    color:white;
+}
+
+.register-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 30px #8d63ff;
+}
+
+.login-btn{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid #8d63ff;
+}
+
+.login-btn:hover{
+
+    background:#8d63ff;
+
+    transform:translateY(-5px);
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:.35;
+
+    }
+
+    50%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        opacity:.35;
+
+    }
+
+}

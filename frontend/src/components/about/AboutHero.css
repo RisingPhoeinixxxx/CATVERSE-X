@@ -1,0 +1,59 @@
+.about-hero{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:140px 60px 60px;
+
+}
+
+.about-badge{
+
+display:inline-block;
+
+padding:12px 24px;
+
+border-radius:40px;
+
+background:#ff4fd815;
+
+border:1px solid #ff4fd830;
+
+color:#ff4fd8;
+
+margin-bottom:28px;
+
+letter-spacing:2px;
+
+}
+
+.about-hero h1{
+
+font-size:88px;
+
+color:white;
+
+font-weight:800;
+
+}
+
+.about-hero h1 span{
+
+color:#ff4fd8;
+
+}
+
+.about-hero p{
+
+margin-top:24px;
+
+max-width:800px;
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#c3c8de;
+
+}

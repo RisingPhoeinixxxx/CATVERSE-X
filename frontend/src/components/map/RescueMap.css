@@ -1,0 +1,15 @@
+.map-box{
+
+max-width:1500px;
+
+height:650px;
+
+margin:40px auto;
+
+border-radius:28px;
+
+overflow:hidden;
+
+border:1px solid rgba(255,255,255,.08);
+
+}

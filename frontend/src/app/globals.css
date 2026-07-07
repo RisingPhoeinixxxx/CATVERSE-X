@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+/* ==========================================================
+   CATVERSE X DESIGN SYSTEM
+   ========================================================== */
+
+:root{
+
+--bg:#060311;
+
+--panel:#0b0d1b;
+
+--panel2:#14162b;
+
+--pink:#ff4fd8;
+
+--purple:#b44dff;
+
+--blue:#5cc8ff;
+
+--green:#19ff9b;
+
+--text:#ffffff;
+
+--muted:#9ea6c2;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--bg);
+
+color:white;
+
+overflow-x:hidden;
+
+font-family:Arial,Helvetica,sans-serif;
+
+}
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#050510;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+
+180deg,
+
+var(--purple),
+
+var(--pink)
+
+);
+
+border-radius:20px;
+
+}
+
+/* ================================
+   Neon Text
+================================ */
+
+.neon{
+
+color:white;
+
+text-shadow:
+
+0 0 8px rgba(255,79,216,.7),
+
+0 0 16px rgba(255,79,216,.5),
+
+0 0 28px rgba(180,77,255,.7),
+
+0 0 60px rgba(180,77,255,.4);
+
+}
+
+/* ================================
+   Glass Panel
+================================ */
+
+.glass{
+
+background:rgba(20,22,43,.55);
+
+backdrop-filter:blur(24px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ================================
+   Animated Background
+================================ */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(circle at 20% 20%,rgba(180,77,255,.18),transparent 30%),
+
+radial-gradient(circle at 80% 20%,rgba(255,79,216,.14),transparent 30%),
+
+radial-gradient(circle at 50% 90%,rgba(92,200,255,.12),transparent 35%);
+
+z-index:-5;
+
+}
+
+/* ======================================
+   Grid
+====================================== */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),
+
+linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+
+background-size:55px 55px;
+
+opacity:.4;
+
+z-index:-4;
+
+}
+
+/* ======================================
+   Selection
+====================================== */
+
+::selection{
+
+background:var(--pink);
+
+color:white;
+
+}
+
+/* ======================================
+   Buttons
+====================================== */
+
+button{
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+/* ======================================
+   Links
+====================================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+/* ======================================
+   Images
+====================================== */
+
+img{
+
+display:block;
+
+max-width:100%;
+
+}

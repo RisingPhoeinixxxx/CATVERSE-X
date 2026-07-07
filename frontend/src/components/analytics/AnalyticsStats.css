@@ -1,0 +1,55 @@
+.analytics-stats{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:20px 60px;
+
+display:grid;
+
+grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+
+gap:24px;
+
+}
+
+.analytics-card{
+
+padding:30px;
+
+border-radius:24px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+transition:.3s;
+
+}
+
+.analytics-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ff4fd8;
+
+}
+
+.analytics-card p{
+
+color:#aeb4ce;
+
+margin-bottom:12px;
+
+}
+
+.analytics-card h2{
+
+font-size:50px;
+
+color:#ff4fd8;
+
+}

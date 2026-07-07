@@ -1,0 +1,93 @@
+.shelter-hero{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:140px 60px 60px;
+
+}
+
+.shelter-badge{
+
+display:inline-block;
+
+padding:12px 24px;
+
+border-radius:40px;
+
+background:#ff4fd815;
+
+border:1px solid #ff4fd830;
+
+color:#ff4fd8;
+
+letter-spacing:2px;
+
+margin-bottom:28px;
+
+}
+
+.shelter-hero h1{
+
+font-size:88px;
+
+font-weight:800;
+
+color:white;
+
+}
+
+.shelter-hero h1 span{
+
+color:#ff4fd8;
+
+}
+
+.shelter-hero p{
+
+margin-top:24px;
+
+max-width:700px;
+
+font-size:22px;
+
+line-height:1.8;
+
+color:#bfc4da;
+
+}
+
+.shelter-buttons{
+
+display:flex;
+
+gap:20px;
+
+margin-top:40px;
+
+}
+
+.shelter-buttons button{
+
+padding:18px 36px;
+
+border:none;
+
+border-radius:18px;
+
+background:linear-gradient(90deg,#ff4fd8,#8f4dff);
+
+color:white;
+
+cursor:pointer;
+
+}
+
+.secondary{
+
+background:transparent !important;
+
+border:1px solid #ff4fd8 !important;
+
+}

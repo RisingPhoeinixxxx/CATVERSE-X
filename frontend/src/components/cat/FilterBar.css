@@ -1,0 +1,44 @@
+.filter-bar{
+
+display:flex;
+
+gap:16px;
+
+flex-wrap:wrap;
+
+margin-bottom:50px;
+
+}
+
+.filter-btn{
+
+padding:12px 26px;
+
+border-radius:40px;
+
+border:1px solid rgba(255,79,216,.20);
+
+background:rgba(255,255,255,.03);
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.filter-btn:hover{
+
+background:#ff4fd8;
+
+color:white;
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 20px rgba(255,79,216,.35);
+
+}

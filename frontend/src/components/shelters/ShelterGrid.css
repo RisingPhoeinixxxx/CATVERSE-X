@@ -1,0 +1,37 @@
+.shelter-grid{
+
+max-width:1500px;
+
+margin:auto;
+
+padding:40px 60px 100px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+gap:30px;
+
+}
+
+.shelter-placeholder{
+
+height:450px;
+
+border-radius:28px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:34px;
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+color:#ff4fd8;
+
+}
