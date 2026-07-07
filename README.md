@@ -489,7 +489,13 @@ This project was developed during the Coding Kitty Hackathon using:
 
 ## License
 
-This project is currently unlicensed. Add a `LICENSE` file before any public distribution.
+This repository is provided for viewing and evaluation purposes only.
+
+The source code is **not open source**.
+
+No part of this project may be copied, modified, redistributed, or reused without the author's prior written permission.
+
+© 2026 Vinaya C L. All Rights Reserved.
 
 ---
 
